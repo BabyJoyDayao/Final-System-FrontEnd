@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 // import Booking from "./pages/Booking";
 // import Packages from "./pages/Packages";
 import Login from './Authorization/Login';
+import Register from './Authorization/Register'
 
 
 export default function App() {
@@ -12,6 +13,9 @@ export default function App() {
     
     if(showLogin){
         return <Login onSwitchToRegister={() => setShowLogin(false)} />;
+    }
+    if(!showLogin){
+        return <Register onSwitchToLogin={() => setShowLogin(true)} />;
     }
     
     return(
