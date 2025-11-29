@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FiBell, FiUser, FiSearch } from "react-icons/fi";
-import PackageCard from "../components/PackageCard";
 
 export default function Dashboard() {
   const [packages, setPackages] = useState([
